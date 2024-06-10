@@ -12,7 +12,7 @@ exports.addExpense = async (req, res) => {
         if (amount <= 0 || typeof amount !== 'number') {
             return res.status(400).json({ message: 'Amount must be a positive number' });
         }
-
+// hi
         const income = new ExpenseSchema({
             title,
             amount,
